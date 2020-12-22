@@ -3,32 +3,18 @@
 	<header class="sidebar clearfix">
 	  <div class="site-info">
 		<a href="/" class="site-avatar">
-		  <img
-			src="https://img12.360buyimg.com/img/jfs/t1/54050/14/8277/26915/5d5b7a59E619bbb77/079bf85340568851.png"
-		  />
+		  <img :src="$themeConfig.logo" />
 		</a>
-		<h1 class="site-name"><a href="/">clarence's blog</a></h1>
-		<p class="site-description">敦琢其玉 客信与人</p>
+		<h1 class="site-name"><a href="/">{{$themeConfig.blogName}}</a></h1>
+		<p class="site-description">{{$themeConfig.creed}}</p>
 	  </div>
 	</header>
 
 	<div class="navlist">
 	  <nav>
-		<a href="/">首页</a>
-
-		<a href="/tags">标签</a>
-
-		<a href="/about">关于</a>
-
-		<a href="/blog/关于此博客-vuepress.html">博客技术</a>
+		  <a v-for="(nav, index) in $themeConfig.nav" :key="index" :href="nav.link">{{nav.text}}</a>
 	  </nav>
 	</div>
-
-	<!-- <div class="wrapper-footer-desktop wrapper-footer-mobile">
-	<footer class="footer">
-	  <p>我的每一步都是在尝试</p>
-	</footer>
-  </div> -->
   </div>
 </template>
 

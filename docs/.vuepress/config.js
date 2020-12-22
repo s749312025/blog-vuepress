@@ -10,52 +10,22 @@ module.exports = {
     },
     // theme: require.resolve('./theme/'),
     themeConfig: {
-        // logo: '/logo.png',
-        // nav : [
-        //     { text: '首页', link: '/' }
-        // ],
-        // smoothScroll: true,
-        // sidebarDepth: 2,
-        // sidebar: sidebarConfig
-
-        // docsDir: '',
-
-        dateFormat: 'YYYY-MM-DD',
-        nav: [ // 导航
-            {
-                text: 'Blog',
-                link: '/posts/',
-            },
-            {
-                text: 'Tags',
-                link: '/tag/',
-            },
-        ],
-        directories: [ // 目录分类器
-            {
-                id: 'post',
-                dirname: '_posts',
-                path: '/posts/',
-                itemPermalink: '/posts/:year/:month/:day/:slug'
-            },
+        blogName: "clarence's blog",
+        creed: '敦琢其玉 客信与人',
+        logo: 'https://img12.360buyimg.com/img/jfs/t1/54050/14/8277/26915/5d5b7a59E619bbb77/079bf85340568851.png',
+        nav : [
+            { text: '首页', link: '/' },
+            { text: '标签', link: '/tags' },
+            { text: '关于', link: '/about' },
+            { text: '博客技术', link: '/blog/关于此博客-vuepress.html' },
         ],
         footer: { // 页脚
             contact: [
                 {
                     type: 'github',
-                    link: 'https://github.com/zhb333/readme-blog',
+                    link: 'https://github.com/s749312025/blog-vuepress',
                 }
             ],
-            copyright: [
-                {
-                    text: '粤ICP备20016112号',
-                    link: 'http://beian.miit.gov.cn',
-                },
-                {
-                    text: 'MIT Licensed | Copyright © 2020-present forapi.cn',
-                    link: 'https://github.com/zhb333/readme-blog',
-                },
-            ]
         }
     }
 }
