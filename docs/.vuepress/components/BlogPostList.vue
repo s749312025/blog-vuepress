@@ -32,7 +32,9 @@ export default {
 	mounted() {
 		this.blogList = this.list.filter(
 			(item) => item.regularPath.indexOf("/blog/") > -1
-		);
+		).sort((a, b) => {
+			return new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+		});
 	},
 };
 </script>
