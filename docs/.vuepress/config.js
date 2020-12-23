@@ -1,7 +1,8 @@
 module.exports = {
-    // title: '引流河API文档',
-    // description: '引流河API文档',
+    title: "clarence's blog",
     port: 3000,
+    description: "clarence's blog",
+    shouldPrefetch: () => false,
     head: [
         // ['meta', { name: 'theme-color', content: '#409EFF' }],
     ],
